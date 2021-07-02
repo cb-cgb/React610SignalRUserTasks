@@ -54,11 +54,11 @@ class Home extends Component {
   buildButton = (t, user) => {
 
    if (user) {
-    if (t.isAssigned && t.userEmail !== user.email) {
+    if (t.isAssigned && t.userId !== user.id) {
       return <button disabled className="btn btn-warning">{t.userName} has this one</button>
     }
 
-    if (t.isAssigned && t.userEmail === user.email) {
+    if (t.isAssigned && t.userId === user.id) {
       return (
         <>
           <button className="btn btn-success" onClick={() => this.onCompleteTask(t)} >I'm done</button>

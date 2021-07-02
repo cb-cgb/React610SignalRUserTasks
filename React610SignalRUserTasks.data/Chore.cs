@@ -17,8 +17,8 @@ namespace React610SignalRUserTasks.data
         [NotMapped]
         public String UserName => UserId != null ? User.Name : "";
 
-        [NotMapped]
-        public String UserEmail => UserId != null ? User.Email : "";
+       /* [NotMapped]
+        public String UserEmail => UserId != null ? User.Email : "";*/
 
         [JsonIgnore]
         public User User { get; set; }
